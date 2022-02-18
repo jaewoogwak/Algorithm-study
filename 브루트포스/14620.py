@@ -33,7 +33,7 @@ for c in c_list:
         cost = 0;
         # 씨앗을 심은 좌표를 기준으로 꽃이 피면(상하좌우 좌표) 다른 꽃과 안 겹치는지 확인
         for k in range(5):
-            if checked[x+dx[k]][y+dy[k]] == 1:
+            if checked[x+dx[k]][y+dy[k]] == 1: 
                 # 상하좌우 확인하다가 이미 꽃이 핀 자리랑 겹치면 바로 break
                 is_possible = False;
                 break;
