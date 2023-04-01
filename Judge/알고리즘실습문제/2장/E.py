@@ -22,18 +22,21 @@ def best_sum(m, arr):
   return best
  
    
- 
-T = int(sys.stdin.readline())
-for _ in range(T):
-  M,N = map(int, sys.stdin.readline().split())
-  arr = list(map(int, sys.stdin.readline().split()))
- 
-  ans = best_sum(M, arr)
-  if ans == None:
-    print("-1")
-   
-  elif len(ans) == 0:
-    print("0")
-   
-  else:
-    print(len(ans), *ans)
+def main(): 
+  T = int(sys.stdin.readline())
+  for _ in range(T):
+    M,N = map(int, sys.stdin.readline().split())
+    arr = list(map(int, sys.stdin.readline().split()))
+  
+    ans = best_sum(M, arr)
+    if ans == None:
+      print("-1")
+    
+    elif len(ans) == 0:
+      print("0")
+    
+    else:
+      print(len(ans), *ans)
+      
+
+main()

@@ -9,14 +9,17 @@ def CanSum(n, nums):
     if CanSum(n - x, nums): return True
   return False
  
-   
-T = int(sys.stdin.readline())
-for _ in range(T):
-  M,N = map(int, sys.stdin.readline().split())
-  # print(M,N)
-  arr = list(map(int, sys.stdin.readline().split()))
-  # print(arr)
-  if (CanSum(M, arr)):
-    print("true")
-  else:
-    print("false")
+
+def main():
+  T = int(sys.stdin.readline())
+  for _ in range(T):
+    M,N = map(int, sys.stdin.readline().split())
+    # print(M,N)
+    arr = list(map(int, sys.stdin.readline().split()))
+    # print(arr)
+    if (CanSum(M, arr)):
+      print("true")
+    else:
+      print("false")
+      
+main()
